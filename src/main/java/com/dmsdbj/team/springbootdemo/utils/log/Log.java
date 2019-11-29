@@ -1,9 +1,6 @@
 package com.dmsdbj.team.springbootdemo.utils.log;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * @Classname Log
@@ -14,6 +11,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD})
+@Documented
 public @interface Log {
 	String name() default "";
 }

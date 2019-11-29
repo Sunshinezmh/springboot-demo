@@ -34,10 +34,10 @@ public class UserController implements IUserController {
 		log.info("用户输入的ID:[{}]", id);
 		User user = userService.getById(id);
 		return user;
-
 	}
 
 	@Override
+	@Log
 	public IPage getUserList(Page page) {
 		log.info("用户输入的page:[{}]", page);
 		IPage iPage = userService.page(page);
@@ -45,6 +45,7 @@ public class UserController implements IUserController {
 	}
 
 	@Override
+	@Log
 	public String removeUser(int id) {
 		log.info("用户输入的ID:[{}]", id);
 		userService.removeById(id);
@@ -52,6 +53,7 @@ public class UserController implements IUserController {
 	}
 
 	@Override
+	@Log
 	public String saveUser(User user) {
 		log.info("用户输入的ID:[{}]", user);
 		userService.save(user);
@@ -59,6 +61,7 @@ public class UserController implements IUserController {
 	}
 
 	@Override
+	@Log
 	public List<User> getUserByLikeName(String name) {
 		List<User> userList = userService.getUserByLikeName(name);
 		return userList;

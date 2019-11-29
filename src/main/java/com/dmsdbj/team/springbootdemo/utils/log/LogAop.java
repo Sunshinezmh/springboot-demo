@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -16,6 +17,8 @@ import javax.servlet.http.HttpServletRequest;
  * @Date 2019/11/4 18:30
  */
 @Slf4j
+@Component
+@Aspect
 public class LogAop {
 	ThreadLocal<Long> time = new ThreadLocal<Long>();
 	ThreadLocal<String> tag = new ThreadLocal<String>();
