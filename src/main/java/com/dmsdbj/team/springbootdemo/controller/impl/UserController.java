@@ -39,7 +39,7 @@ public class UserController implements IUserController {
 	@Override
 	@Log
 	public IPage getUserList(Page page) {
-		log.info("用户输入的page:[{}]", page);
+		log.info("用户输入的查询:[{}]", page.toString());
 		IPage iPage = userService.page(page);
 		return iPage;
 	}
