@@ -46,5 +46,3 @@ management:
       show-details: always
     shutdown:
       enabled: true
-
-

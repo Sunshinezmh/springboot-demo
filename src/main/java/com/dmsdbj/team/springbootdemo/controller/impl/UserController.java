@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.dmsdbj.team.springbootdemo.controller.IUserController;
 import com.dmsdbj.team.springbootdemo.entity.User;
 import com.dmsdbj.team.springbootdemo.service.IUserService;
+import com.dmsdbj.team.springbootdemo.utils.log.Log;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,6 +29,7 @@ public class UserController implements IUserController {
 	private IUserService userService;
 
 	@Override
+	@Log
 	public User getUser(int id) {
 		log.info("用户输入的ID:[{}]", id);
 		User user = userService.getById(id);

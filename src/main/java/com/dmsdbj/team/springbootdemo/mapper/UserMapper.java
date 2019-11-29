@@ -1,9 +1,7 @@
 package com.dmsdbj.team.springbootdemo.mapper;
-import	java.awt.TrayIcon.MessageType;
 
-import com.dmsdbj.team.springbootdemo.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.apache.ibatis.annotations.Mapper;
+import com.dmsdbj.team.springbootdemo.entity.User;
 
 /**
  * <p>

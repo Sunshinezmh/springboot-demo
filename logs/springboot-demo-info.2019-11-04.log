@@ -1,0 +1,1366 @@
+2019/11/04-10:32:08 WARN [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.appendOn(StartupInfoLogger.java:124)
+ - InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019/11/04-10:32:13 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 1411 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-10:32:13 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-10:32:13 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019/11/04-10:32:13 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019/11/04-10:32:13 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-10:32:14 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-10:32:14 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-10:32:14 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-10:32:14 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-10:32:14 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-10:32:14 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-10:32:14 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 1224 ms
+2019/11/04-10:32:14 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-10:32:14 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572834734964|8|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-10:32:14 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572834734981|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-10:32:14 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572834734993|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-10:32:15 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572834735010|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-10:32:15 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572834735020|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-10:32:15 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-1} inited
+2019/11/04-10:32:15 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-10:32:15 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-10:32:15 INFO [restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)
+ - Initializing ExecutorService 'applicationTaskExecutor'
+2019/11/04-10:32:15 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-10:32:15 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160)
+ - Context refreshed
+2019/11/04-10:32:15 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163)
+ - Found 1 custom documentation plugin(s)
+2019/11/04-10:32:15 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41)
+ - Scanning for api listing references
+2019/11/04-10:32:16 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting ProtocolHandler ["http-nio-8081"]
+2019/11/04-10:32:16 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204)
+ - Tomcat started on port(s): 8081 (http) with context path '/spring-demo'
+2019/11/04-10:32:16 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)
+ - Started SpringBootDemoApplication in 23.379 seconds (JVM running for 28.84)
+2019/11/04-10:32:16 INFO [RMI TCP Connection(2)-192.168.0.110] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/11/04-10:32:16 INFO [RMI TCP Connection(2)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525)
+ - Initializing Servlet 'dispatcherServlet'
+2019/11/04-10:32:16 INFO [RMI TCP Connection(2)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547)
+ - Completed initialization in 7 ms
+2019/11/04-10:32:16 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572834736601|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|/* ping */ SELECT 1|/* ping */ SELECT 1
+2019/11/04-10:32:59 WARN [http-nio-8081-exec-10] Caller+0	 at io.swagger.models.parameters.AbstractSerializableParameter.getExample(AbstractSerializableParameter.java:421)
+ - Illegal DefaultValue 4 for parameter type integer
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:601)
+	at java.lang.Long.valueOf(Long.java:803)
+	at io.swagger.models.parameters.AbstractSerializableParameter.getExample(AbstractSerializableParameter.java:412)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:688)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:721)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:166)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:727)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:721)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:166)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:727)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:721)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:166)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeFields(MapSerializer.java:722)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:643)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:33)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:727)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:721)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:166)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+	at com.fasterxml.jackson.databind.ObjectMapper._configAndWriteValue(ObjectMapper.java:4094)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:3404)
+	at springfox.documentation.spring.web.json.JsonSerializer.toJson(JsonSerializer.java:38)
+	at springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(Swagger2Controller.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019/11/04-10:32:59 WARN [http-nio-8081-exec-10] Caller+0	 at io.swagger.models.parameters.AbstractSerializableParameter.getExample(AbstractSerializableParameter.java:421)
+ - Illegal DefaultValue 2 for parameter type integer
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:601)
+	at java.lang.Long.valueOf(Long.java:803)
+	at io.swagger.models.parameters.AbstractSerializableParameter.getExample(AbstractSerializableParameter.java:412)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:688)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:721)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:166)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:727)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:721)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:166)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:727)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:721)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:166)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeFields(MapSerializer.java:722)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:643)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:33)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:727)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:721)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:166)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+	at com.fasterxml.jackson.databind.ObjectMapper._configAndWriteValue(ObjectMapper.java:4094)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:3404)
+	at springfox.documentation.spring.web.json.JsonSerializer.toJson(JsonSerializer.java:38)
+	at springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(Swagger2Controller.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019/11/04-10:33:11 WARN [http-nio-8081-exec-2] Caller+0	 at org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.handleAsyncRequestTimeoutException(DefaultHandlerExceptionResolver.java:537)
+ - Async request timed out
+2019/11/04-10:33:11 WARN [http-nio-8081-exec-2] Caller+0	 at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException(AbstractHandlerExceptionResolver.java:199)
+ - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2019/11/04-10:34:15 WARN [http-nio-8081-exec-10] Caller+0	 at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException(AbstractHandlerExceptionResolver.java:199)
+ - Resolved [java.lang.IllegalStateException: Callable error]
+2019/11/04-10:34:27 WARN [http-nio-8081-exec-3] Caller+0	 at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException(AbstractHandlerExceptionResolver.java:199)
+ - Resolved [java.lang.IllegalStateException: Callable error]
+2019/11/04-10:34:55 WARN [http-nio-8081-exec-9] Caller+0	 at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException(AbstractHandlerExceptionResolver.java:199)
+ - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2019/11/04-10:36:35 WARN [http-nio-8081-exec-10] Caller+0	 at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException(AbstractHandlerExceptionResolver.java:199)
+ - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2019/11/04-10:37:17 WARN [http-nio-8081-exec-4] Caller+0	 at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException(AbstractHandlerExceptionResolver.java:199)
+ - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2019/11/04-10:37:41 WARN [http-nio-8081-exec-7] Caller+0	 at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException(AbstractHandlerExceptionResolver.java:199)
+ - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2019/11/04-10:37:43 INFO [SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)
+ - Shutting down ExecutorService 'applicationTaskExecutor'
+2019/11/04-10:37:43 INFO [SpringContextShutdownHook] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed
+2019/11/04-16:28:21 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 3302 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-16:28:21 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-16:28:22 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019/11/04-16:28:22 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019/11/04-16:28:22 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-16:28:23 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-16:28:23 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-16:28:23 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:28:23 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-16:28:23 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-16:28:23 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-16:28:23 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 1331 ms
+2019/11/04-16:28:23 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-16:28:23 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856103979|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:28:23 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856103994|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:28:24 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856104006|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:28:24 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856104017|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:28:24 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856104028|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:28:24 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-1} inited
+2019/11/04-16:28:24 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-16:28:24 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-16:28:24 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-16:28:24 WARN [restartedMain] Caller+0	 at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558)
+ - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'multipartResolver' defined in class path resource [com/dmsdbj/team/springbootdemo/controller/springMVC/config/WebMvcConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.multipart.MultipartResolver]: Factory method 'multipartResolver' threw exception; nested exception is java.lang.NoClassDefFoundError: org/apache/commons/fileupload/disk/DiskFileItemFactory
+2019/11/04-16:28:24 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed
+2019/11/04-16:28:24 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Stopping service [Tomcat]
+2019/11/04-16:28:24 WARN [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - The web application [spring-demo] appears to have started a thread named [pool-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2019/11/04-16:28:24 INFO [restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:136)
+ - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019/11/04-16:28:58 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 3321 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-16:28:58 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-16:28:58 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019/11/04-16:28:58 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019/11/04-16:28:59 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-16:28:59 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-16:28:59 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-16:28:59 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:28:59 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-16:28:59 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-16:28:59 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-16:28:59 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 1070 ms
+2019/11/04-16:29:00 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-16:29:00 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856140390|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:29:00 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856140404|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:29:00 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856140415|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:29:00 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856140426|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:29:00 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856140437|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:29:00 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-1} inited
+2019/11/04-16:29:00 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-16:29:00 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-16:29:01 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-16:29:01 WARN [restartedMain] Caller+0	 at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558)
+ - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'multipartResolver' defined in class path resource [com/dmsdbj/team/springbootdemo/controller/springMVC/config/WebMvcConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.multipart.MultipartResolver]: Factory method 'multipartResolver' threw exception; nested exception is java.lang.NoClassDefFoundError: org/apache/commons/fileupload/disk/DiskFileItemFactory
+2019/11/04-16:29:01 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed
+2019/11/04-16:29:01 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Stopping service [Tomcat]
+2019/11/04-16:29:01 WARN [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - The web application [spring-demo] appears to have started a thread named [pool-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2019/11/04-16:29:01 INFO [restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:136)
+ - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019/11/04-16:32:04 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 3356 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-16:32:04 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-16:32:04 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019/11/04-16:32:04 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019/11/04-16:32:04 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-16:32:04 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-16:32:05 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-16:32:05 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:32:05 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-16:32:05 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-16:32:05 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-16:32:05 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 1029 ms
+2019/11/04-16:32:05 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-16:32:05 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856325675|4|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:32:05 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856325689|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:32:05 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856325700|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:32:05 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856325711|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:32:05 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856325722|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:32:05 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-1} inited
+2019/11/04-16:32:06 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-16:32:06 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-16:32:06 INFO [restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)
+ - Initializing ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:32:06 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-16:32:06 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160)
+ - Context refreshed
+2019/11/04-16:32:06 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163)
+ - Found 1 custom documentation plugin(s)
+2019/11/04-16:32:06 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41)
+ - Scanning for api listing references
+2019/11/04-16:32:06 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:32:06 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204)
+ - Tomcat started on port(s): 8081 (http) with context path '/spring-demo'
+2019/11/04-16:32:06 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)
+ - Started SpringBootDemoApplication in 3.282 seconds (JVM running for 3.903)
+2019/11/04-16:32:07 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/11/04-16:32:07 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525)
+ - Initializing Servlet 'dispatcherServlet'
+2019/11/04-16:32:07 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547)
+ - Completed initialization in 5 ms
+2019/11/04-16:32:07 INFO [RMI TCP Connection(2)-192.168.0.110] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856327093|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|/* ping */ SELECT 1|/* ping */ SELECT 1
+2019/11/04-16:42:07 INFO [SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)
+ - Shutting down ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:42:07 INFO [SpringContextShutdownHook] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed
+2019/11/04-16:42:15 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 3430 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-16:42:15 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-16:42:15 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019/11/04-16:42:15 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019/11/04-16:42:16 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-16:42:16 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-16:42:16 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-16:42:16 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:42:16 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-16:42:16 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-16:42:16 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-16:42:17 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 1422 ms
+2019/11/04-16:42:17 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-16:42:17 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856937569|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:42:17 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856937584|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:42:17 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856937596|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:42:17 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856937607|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:42:17 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856937618|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:42:17 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-1} inited
+2019/11/04-16:42:18 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-16:42:18 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-16:42:18 INFO [restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)
+ - Initializing ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:42:18 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-16:42:18 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160)
+ - Context refreshed
+2019/11/04-16:42:18 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163)
+ - Found 1 custom documentation plugin(s)
+2019/11/04-16:42:18 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41)
+ - Scanning for api listing references
+2019/11/04-16:42:18 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:42:18 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204)
+ - Tomcat started on port(s): 8081 (http) with context path '/spring-demo'
+2019/11/04-16:42:18 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)
+ - Started SpringBootDemoApplication in 3.525 seconds (JVM running for 4.147)
+2019/11/04-16:42:19 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/11/04-16:42:19 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525)
+ - Initializing Servlet 'dispatcherServlet'
+2019/11/04-16:42:19 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547)
+ - Completed initialization in 6 ms
+2019/11/04-16:42:19 INFO [RMI TCP Connection(2)-192.168.0.110] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856939195|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|/* ping */ SELECT 1|/* ping */ SELECT 1
+2019/11/04-16:42:29 INFO [Thread-11] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)
+ - Shutting down ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:42:29 INFO [Thread-11] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed
+2019/11/04-16:42:40 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 3447 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-16:42:40 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-16:42:40 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019/11/04-16:42:40 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019/11/04-16:42:41 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-16:42:41 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-16:42:41 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-16:42:41 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:42:41 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-16:42:41 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-16:42:41 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-16:42:41 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 1177 ms
+2019/11/04-16:42:42 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-16:42:42 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856962891|19|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:42:42 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856962921|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:42:42 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856962938|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:42:42 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856962951|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:42:42 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856962963|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:42:42 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-1} inited
+2019/11/04-16:42:43 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-16:42:43 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-16:42:43 INFO [restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)
+ - Initializing ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:42:43 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-16:42:43 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160)
+ - Context refreshed
+2019/11/04-16:42:43 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163)
+ - Found 1 custom documentation plugin(s)
+2019/11/04-16:42:43 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41)
+ - Scanning for api listing references
+2019/11/04-16:42:44 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:42:44 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204)
+ - Tomcat started on port(s): 8081 (http) with context path '/spring-demo'
+2019/11/04-16:42:44 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)
+ - Started SpringBootDemoApplication in 3.95 seconds (JVM running for 4.71)
+2019/11/04-16:42:44 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/11/04-16:42:44 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525)
+ - Initializing Servlet 'dispatcherServlet'
+2019/11/04-16:42:44 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547)
+ - Completed initialization in 4 ms
+2019/11/04-16:42:44 INFO [RMI TCP Connection(2)-192.168.0.110] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856964625|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|/* ping */ SELECT 1|/* ping */ SELECT 1
+2019/11/04-16:43:11 INFO [Thread-12] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)
+ - Shutting down ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:43:11 INFO [Thread-12] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed
+2019/11/04-16:43:11 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 3447 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-16:43:11 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-16:43:11 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-16:43:11 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-16:43:11 WARN [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - The MBean registry cannot be disabled because it has already been initialised
+2019/11/04-16:43:11 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-16:43:11 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:43:11 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-16:43:11 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-16:43:11 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-16:43:11 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 270 ms
+2019/11/04-16:43:11 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-16:43:11 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856991973|0|statement|connection 5|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:43:11 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856991984|0|statement|connection 6|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:43:11 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856991995|0|statement|connection 7|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:43:12 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856992007|0|statement|connection 8|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:43:12 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572856992019|0|statement|connection 9|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:43:12 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-2} inited
+2019/11/04-16:43:12 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-16:43:12 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-16:43:12 INFO [restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)
+ - Initializing ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:43:12 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-16:43:12 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160)
+ - Context refreshed
+2019/11/04-16:43:12 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163)
+ - Found 1 custom documentation plugin(s)
+2019/11/04-16:43:12 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41)
+ - Scanning for api listing references
+2019/11/04-16:43:12 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:43:12 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204)
+ - Tomcat started on port(s): 8081 (http) with context path '/spring-demo'
+2019/11/04-16:43:12 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)
+ - Started SpringBootDemoApplication in 0.759 seconds (JVM running for 33.009)
+2019/11/04-16:43:12 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent(ConditionEvaluationDeltaLoggingListener.java:63)
+ - Condition evaluation unchanged
+2019/11/04-16:43:42 INFO [pool-2-thread-1] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175)
+ - Illegal access: this web application instance has been stopped already. Could not load [spy.properties]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [spy.properties]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1385)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1038)
+	at com.p6spy.engine.common.P6Util.locateOnClassPath(P6Util.java:102)
+	at com.p6spy.engine.common.P6Util.locateFile(P6Util.java:84)
+	at com.p6spy.engine.spy.option.SpyDotProperties.locate(SpyDotProperties.java:121)
+	at com.p6spy.engine.spy.option.SpyDotProperties.lastModified(SpyDotProperties.java:87)
+	at com.p6spy.engine.spy.option.SpyDotProperties.isModified(SpyDotProperties.java:81)
+	at com.p6spy.engine.spy.option.SpyDotPropertiesReloader$1.run(SpyDotPropertiesReloader.java:55)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019/11/04-16:43:42 INFO [pool-2-thread-1] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175)
+ - Illegal access: this web application instance has been stopped already. Could not load [spy.properties]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [spy.properties]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1385)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1038)
+	at com.p6spy.engine.common.P6Util.locateOnClassPath(P6Util.java:102)
+	at com.p6spy.engine.common.P6Util.locateFile(P6Util.java:84)
+	at com.p6spy.engine.spy.option.SpyDotProperties.locate(SpyDotProperties.java:121)
+	at com.p6spy.engine.spy.option.SpyDotProperties.<init>(SpyDotProperties.java:47)
+	at com.p6spy.engine.spy.P6ModuleManager.<init>(P6ModuleManager.java:46)
+	at com.p6spy.engine.spy.P6ModuleManager.initMe(P6ModuleManager.java:65)
+	at com.p6spy.engine.spy.P6ModuleManager.reload(P6ModuleManager.java:246)
+	at com.p6spy.engine.spy.option.SpyDotPropertiesReloader$1.run(SpyDotPropertiesReloader.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019/11/04-16:44:17 INFO [SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)
+ - Shutting down ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:44:17 INFO [SpringContextShutdownHook] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-2} closed
+2019/11/04-16:44:28 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 3520 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-16:44:28 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-16:44:28 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019/11/04-16:44:28 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019/11/04-16:44:28 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-16:44:29 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - Skipping MapperFactoryBean with name 'userMapper' and 'com.dmsdbj.team.springbootdemo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2019/11/04-16:44:29 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo.mapper]' package. Please check your configuration.
+2019/11/04-16:44:29 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-16:44:29 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-16:44:29 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:44:29 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-16:44:29 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-16:44:29 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-16:44:29 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 1008 ms
+2019/11/04-16:44:29 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-16:44:30 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857070014|4|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:44:30 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857070027|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:44:30 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857070039|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:44:30 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857070051|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:44:30 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857070061|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:44:30 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-1} inited
+2019/11/04-16:44:30 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-16:44:30 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-16:44:30 INFO [restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)
+ - Initializing ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:44:30 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-16:44:30 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160)
+ - Context refreshed
+2019/11/04-16:44:30 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163)
+ - Found 1 custom documentation plugin(s)
+2019/11/04-16:44:30 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41)
+ - Scanning for api listing references
+2019/11/04-16:44:31 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:44:31 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204)
+ - Tomcat started on port(s): 8081 (http) with context path '/spring-demo'
+2019/11/04-16:44:31 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)
+ - Started SpringBootDemoApplication in 3.002 seconds (JVM running for 3.623)
+2019/11/04-16:44:31 INFO [RMI TCP Connection(2)-192.168.0.110] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/11/04-16:44:31 INFO [RMI TCP Connection(2)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525)
+ - Initializing Servlet 'dispatcherServlet'
+2019/11/04-16:44:31 INFO [RMI TCP Connection(2)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547)
+ - Completed initialization in 5 ms
+2019/11/04-16:44:31 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857071635|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|/* ping */ SELECT 1|/* ping */ SELECT 1
+2019/11/04-16:45:12 INFO [SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)
+ - Shutting down ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:45:12 INFO [SpringContextShutdownHook] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed
+2019/11/04-16:45:16 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 3539 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-16:45:16 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-16:45:16 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019/11/04-16:45:16 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019/11/04-16:45:17 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-16:45:17 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - Skipping MapperFactoryBean with name 'userMapper' and 'com.dmsdbj.team.springbootdemo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2019/11/04-16:45:17 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo.mapper]' package. Please check your configuration.
+2019/11/04-16:45:17 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-16:45:17 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-16:45:17 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:45:17 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-16:45:17 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-16:45:17 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-16:45:17 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 1010 ms
+2019/11/04-16:45:17 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-16:45:18 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857118053|4|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:45:18 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857118068|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:45:18 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857118079|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:45:18 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857118091|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:45:18 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857118102|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:45:18 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-1} inited
+2019/11/04-16:45:18 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-16:45:18 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-16:45:18 INFO [restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)
+ - Initializing ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:45:18 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-16:45:18 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160)
+ - Context refreshed
+2019/11/04-16:45:18 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163)
+ - Found 1 custom documentation plugin(s)
+2019/11/04-16:45:18 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41)
+ - Scanning for api listing references
+2019/11/04-16:45:19 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:45:19 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204)
+ - Tomcat started on port(s): 8081 (http) with context path '/spring-demo'
+2019/11/04-16:45:19 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)
+ - Started SpringBootDemoApplication in 2.961 seconds (JVM running for 3.442)
+2019/11/04-16:45:19 INFO [RMI TCP Connection(2)-192.168.0.110] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/11/04-16:45:19 INFO [RMI TCP Connection(2)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525)
+ - Initializing Servlet 'dispatcherServlet'
+2019/11/04-16:45:19 INFO [RMI TCP Connection(2)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547)
+ - Completed initialization in 6 ms
+2019/11/04-16:45:19 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857119273|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|/* ping */ SELECT 1|/* ping */ SELECT 1
+2019/11/04-16:46:12 INFO [SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)
+ - Shutting down ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:46:12 INFO [SpringContextShutdownHook] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed
+2019/11/04-16:46:31 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 3574 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-16:46:31 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-16:46:31 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019/11/04-16:46:31 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019/11/04-16:46:32 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-16:46:32 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - Skipping MapperFactoryBean with name 'userMapper' and 'com.dmsdbj.team.springbootdemo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2019/11/04-16:46:32 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo.mapper]' package. Please check your configuration.
+2019/11/04-16:46:32 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-16:46:32 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-16:46:32 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:46:32 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-16:46:32 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-16:46:32 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-16:46:32 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 1036 ms
+2019/11/04-16:46:33 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-16:46:33 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857193308|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:46:33 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857193322|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:46:33 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857193334|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:46:33 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857193346|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:46:33 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857193357|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:46:33 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-1} inited
+2019/11/04-16:46:33 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-16:46:33 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-16:46:33 INFO [restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)
+ - Initializing ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:46:33 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-16:46:34 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160)
+ - Context refreshed
+2019/11/04-16:46:34 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163)
+ - Found 1 custom documentation plugin(s)
+2019/11/04-16:46:34 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41)
+ - Scanning for api listing references
+2019/11/04-16:46:34 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:46:34 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204)
+ - Tomcat started on port(s): 8081 (http) with context path '/spring-demo'
+2019/11/04-16:46:34 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)
+ - Started SpringBootDemoApplication in 2.945 seconds (JVM running for 3.397)
+2019/11/04-16:46:34 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/11/04-16:46:34 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525)
+ - Initializing Servlet 'dispatcherServlet'
+2019/11/04-16:46:34 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547)
+ - Completed initialization in 8 ms
+2019/11/04-16:46:34 INFO [RMI TCP Connection(2)-192.168.0.110] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857194535|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|/* ping */ SELECT 1|/* ping */ SELECT 1
+2019/11/04-16:47:06 INFO [SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)
+ - Shutting down ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:47:06 INFO [SpringContextShutdownHook] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed
+2019/11/04-16:47:33 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 3587 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-16:47:33 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-16:47:33 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019/11/04-16:47:33 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019/11/04-16:47:34 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-16:47:34 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - Skipping MapperFactoryBean with name 'userMapper' and 'com.dmsdbj.team.springbootdemo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2019/11/04-16:47:34 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo.mapper*]' package. Please check your configuration.
+2019/11/04-16:47:34 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-16:47:34 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-16:47:34 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:47:34 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-16:47:34 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-16:47:34 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-16:47:34 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 997 ms
+2019/11/04-16:47:35 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-16:47:35 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857255494|4|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:47:35 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857255508|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:47:35 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857255520|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:47:35 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857255531|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:47:35 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857255542|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:47:35 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-1} inited
+2019/11/04-16:47:36 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-16:47:36 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-16:47:36 INFO [restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)
+ - Initializing ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:47:36 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-16:47:36 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160)
+ - Context refreshed
+2019/11/04-16:47:36 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163)
+ - Found 1 custom documentation plugin(s)
+2019/11/04-16:47:36 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41)
+ - Scanning for api listing references
+2019/11/04-16:47:36 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:47:36 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204)
+ - Tomcat started on port(s): 8081 (http) with context path '/spring-demo'
+2019/11/04-16:47:36 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)
+ - Started SpringBootDemoApplication in 2.936 seconds (JVM running for 3.424)
+2019/11/04-16:47:36 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/11/04-16:47:36 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525)
+ - Initializing Servlet 'dispatcherServlet'
+2019/11/04-16:47:36 INFO [RMI TCP Connection(1)-192.168.0.110] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547)
+ - Completed initialization in 5 ms
+2019/11/04-16:47:36 INFO [RMI TCP Connection(2)-192.168.0.110] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857256763|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|/* ping */ SELECT 1|/* ping */ SELECT 1
+2019/11/04-16:49:07 INFO [SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)
+ - Shutting down ExecutorService 'applicationTaskExecutor'
+2019/11/04-16:49:07 INFO [SpringContextShutdownHook] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed
+2019/11/04-16:54:34 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 3647 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-16:54:34 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-16:54:34 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019/11/04-16:54:34 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019/11/04-16:54:34 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-16:54:34 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - Skipping MapperFactoryBean with name 'userMapper' and 'com.dmsdbj.team.springbootdemo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2019/11/04-16:54:34 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo.mapper*]' package. Please check your configuration.
+2019/11/04-16:54:35 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-16:54:35 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-16:54:35 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:54:35 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-16:54:35 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-16:54:35 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-16:54:35 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 1016 ms
+2019/11/04-16:54:35 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-16:54:35 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857675845|4|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:54:35 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857675859|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:54:35 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857675871|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:54:35 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857675882|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:54:35 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857675893|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:54:35 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-1} inited
+2019/11/04-16:54:36 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-16:54:36 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-16:54:36 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-16:54:36 WARN [restartedMain] Caller+0	 at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558)
+ - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'multipartResolver' defined in class path resource [com/dmsdbj/team/springbootdemo/controller/springMVC/config/WebMvcConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.multipart.MultipartResolver]: Factory method 'multipartResolver' threw exception; nested exception is java.lang.NoClassDefFoundError: org/apache/commons/fileupload/disk/DiskFileItemFactory
+2019/11/04-16:54:36 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed
+2019/11/04-16:54:36 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Stopping service [Tomcat]
+2019/11/04-16:54:36 WARN [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - The web application [spring-demo] appears to have started a thread named [pool-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2019/11/04-16:54:36 INFO [restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:136)
+ - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019/11/04-16:57:14 WARN [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.appendOn(StartupInfoLogger.java:124)
+ - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019/11/04-16:57:19 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 3798 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-16:57:19 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-16:57:19 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019/11/04-16:57:19 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019/11/04-16:57:20 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-16:57:20 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - Skipping MapperFactoryBean with name 'userMapper' and 'com.dmsdbj.team.springbootdemo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2019/11/04-16:57:20 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo.mapper*]' package. Please check your configuration.
+2019/11/04-16:57:20 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-16:57:20 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-16:57:20 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-16:57:20 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-16:57:20 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-16:57:20 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-16:57:20 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 1162 ms
+2019/11/04-16:57:20 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-16:57:21 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857841142|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:57:21 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857841156|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:57:21 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857841168|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:57:21 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857841179|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:57:21 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572857841190|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-16:57:21 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-1} inited
+2019/11/04-16:57:21 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-16:57:21 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-16:57:21 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-16:57:21 WARN [restartedMain] Caller+0	 at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558)
+ - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'multipartResolver' defined in class path resource [com/dmsdbj/team/springbootdemo/controller/springMVC/config/WebMvcConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.multipart.MultipartResolver]: Factory method 'multipartResolver' threw exception; nested exception is java.lang.NoClassDefFoundError: org/apache/commons/fileupload/disk/DiskFileItemFactory
+2019/11/04-16:57:21 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed
+2019/11/04-16:57:21 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Stopping service [Tomcat]
+2019/11/04-16:57:21 WARN [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - The web application [spring-demo] appears to have started a thread named [pool-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2019/11/04-16:57:21 INFO [restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:136)
+ - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019/11/04-17:14:24 WARN [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.appendOn(StartupInfoLogger.java:124)
+ - InetAddress.getLocalHost().getHostName() took 5004 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019/11/04-17:14:29 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 578 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-17:14:29 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-17:14:29 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019/11/04-17:14:29 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019/11/04-17:14:29 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-17:14:30 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - Skipping MapperFactoryBean with name 'userMapper' and 'com.dmsdbj.team.springbootdemo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2019/11/04-17:14:30 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo.mapper*]' package. Please check your configuration.
+2019/11/04-17:14:30 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-17:14:30 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-17:14:30 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-17:14:30 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-17:14:30 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-17:14:30 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-17:14:30 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 1332 ms
+2019/11/04-17:14:30 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-17:14:31 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572858871194|6|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-17:14:31 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572858871214|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-17:14:31 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572858871226|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-17:14:31 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572858871238|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-17:14:31 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572858871249|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-17:14:31 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-1} inited
+2019/11/04-17:14:31 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-17:14:31 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-17:14:32 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-17:14:32 WARN [restartedMain] Caller+0	 at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558)
+ - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'multipartResolver' defined in class path resource [com/dmsdbj/team/springbootdemo/controller/springMVC/config/WebMvcConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.multipart.MultipartResolver]: Factory method 'multipartResolver' threw exception; nested exception is java.lang.NoClassDefFoundError: org/apache/commons/fileupload/disk/DiskFileItemFactory
+2019/11/04-17:14:32 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed
+2019/11/04-17:14:32 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Stopping service [Tomcat]
+2019/11/04-17:14:32 WARN [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - The web application [spring-demo] appears to have started a thread named [pool-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2019/11/04-17:14:32 INFO [restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:136)
+ - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019/11/04-17:26:18 WARN [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.appendOn(StartupInfoLogger.java:124)
+ - InetAddress.getLocalHost().getHostName() took 5006 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019/11/04-17:26:23 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 585 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-17:26:23 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-17:26:23 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019/11/04-17:26:23 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019/11/04-17:26:24 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-17:26:24 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - Skipping MapperFactoryBean with name 'userMapper' and 'com.dmsdbj.team.springbootdemo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2019/11/04-17:26:24 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo.mapper*]' package. Please check your configuration.
+2019/11/04-17:26:24 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-17:26:24 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-17:26:24 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-17:26:24 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-17:26:24 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-17:26:24 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-17:26:24 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 1315 ms
+2019/11/04-17:26:25 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-17:26:25 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572859585596|7|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-17:26:25 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572859585611|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-17:26:25 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572859585628|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-17:26:25 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572859585640|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-17:26:25 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572859585651|0|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-17:26:25 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-1} inited
+2019/11/04-17:26:26 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-17:26:26 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-17:26:26 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-17:26:26 WARN [restartedMain] Caller+0	 at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:558)
+ - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'multipartResolver' defined in class path resource [com/dmsdbj/team/springbootdemo/controller/springMVC/config/WebMvcConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.multipart.MultipartResolver]: Factory method 'multipartResolver' threw exception; nested exception is java.lang.NoClassDefFoundError: org/apache/commons/fileupload/disk/DiskFileItemFactory
+2019/11/04-17:26:26 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed
+2019/11/04-17:26:26 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Stopping service [Tomcat]
+2019/11/04-17:26:26 WARN [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - The web application [spring-demo] appears to have started a thread named [pool-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2019/11/04-17:26:26 INFO [restartedMain] Caller+0	 at org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:136)
+ - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019/11/04-17:39:00 WARN [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.appendOn(StartupInfoLogger.java:124)
+ - InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2019/11/04-17:39:05 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)
+ - Starting SpringBootDemoApplication on SunshinedeMacBook-Pro.local with PID 857 (/Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo/target/classes started by sunshinezhang in /Users/sunshinezhang/Documents/Team3/technology/SSM/spring-boot-demo)
+2019/11/04-17:39:05 INFO [restartedMain] Caller+0	 at org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)
+ - No active profile set, falling back to default profiles: default
+2019/11/04-17:39:05 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019/11/04-17:39:05 INFO [restartedMain] Caller+0	 at org.springframework.boot.logging.DeferredLog.logTo(DeferredLog.java:225)
+ - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019/11/04-17:39:06 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo]' package. Please check your configuration.
+2019/11/04-17:39:06 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - Skipping MapperFactoryBean with name 'userMapper' and 'com.dmsdbj.team.springbootdemo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2019/11/04-17:39:06 WARN [restartedMain] Caller+0	 at org.mybatis.logging.Logger.warn(Logger.java:44)
+ - No MyBatis mapper was found in '[com.dmsdbj.team.springbootdemo.mapper*]' package. Please check your configuration.
+2019/11/04-17:39:06 INFO [restartedMain] Caller+0	 at org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization(PostProcessorRegistrationDelegate.java:330)
+ - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/11/04-17:39:06 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92)
+ - Tomcat initialized with port(s): 8081 (http)
+2019/11/04-17:39:06 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing ProtocolHandler ["http-nio-8081"]
+2019/11/04-17:39:06 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting service [Tomcat]
+2019/11/04-17:39:06 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019/11/04-17:39:06 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring embedded WebApplicationContext
+2019/11/04-17:39:06 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284)
+ - Root WebApplicationContext: initialization completed in 1170 ms
+2019/11/04-17:39:06 INFO [restartedMain] Caller+0	 at com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource(DruidDataSourceAutoConfigure.java:56)
+ - Init DruidDataSource
+2019/11/04-17:39:07 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572860347363|5|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-17:39:07 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572860347378|0|statement|connection 1|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-17:39:07 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572860347394|0|statement|connection 2|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-17:39:07 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572860347409|0|statement|connection 3|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-17:39:07 INFO [restartedMain] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572860347425|1|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+2019/11/04-17:39:07 INFO [restartedMain] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930)
+ - {dataSource-1} inited
+2019/11/04-17:39:08 INFO [restartedMain] Caller+0	 at org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>(EndpointLinksResolver.java:58)
+ - Exposing 14 endpoint(s) beneath base path '/actuator'
+2019/11/04-17:39:08 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)
+ - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019/11/04-17:39:08 INFO [restartedMain] Caller+0	 at org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer(OptionalLiveReloadServer.java:57)
+ - LiveReload server is running on port 35729
+2019/11/04-17:39:08 INFO [restartedMain] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)
+ - Initializing ExecutorService 'taskScheduler'
+2019/11/04-17:39:08 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160)
+ - Context refreshed
+2019/11/04-17:39:08 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163)
+ - Found 1 custom documentation plugin(s)
+2019/11/04-17:39:08 INFO [restartedMain] Caller+0	 at springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41)
+ - Scanning for api listing references
+2019/11/04-17:39:08 INFO [restartedMain] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Starting ProtocolHandler ["http-nio-8081"]
+2019/11/04-17:39:08 INFO [restartedMain] Caller+0	 at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204)
+ - Tomcat started on port(s): 8081 (http) with context path '/spring-demo'
+2019/11/04-17:39:08 INFO [restartedMain] Caller+0	 at org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)
+ - Started SpringBootDemoApplication in 23.372 seconds (JVM running for 28.891)
+2019/11/04-17:39:09 INFO [RMI TCP Connection(13)-127.0.0.1] Caller+0	 at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)
+ - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019/11/04-17:39:09 INFO [RMI TCP Connection(13)-127.0.0.1] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525)
+ - Initializing Servlet 'dispatcherServlet'
+2019/11/04-17:39:09 INFO [RMI TCP Connection(13)-127.0.0.1] Caller+0	 at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547)
+ - Completed initialization in 7 ms
+2019/11/04-17:39:09 INFO [RMI TCP Connection(14)-127.0.0.1] Caller+0	 at com.p6spy.engine.spy.appender.Slf4JLogger.logSQL(Slf4JLogger.java:60)
+ - 1572860349077|1|statement|connection 4|url jdbc:p6spy:mysql://localhost:3306/test|/* ping */ SELECT 1|/* ping */ SELECT 1
+2019/11/04-17:39:32 INFO [SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)
+ - Shutting down ExecutorService 'taskScheduler'
+2019/11/04-17:39:32 INFO [SpringContextShutdownHook] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed

@@ -1,0 +1,4 @@
+2019/11/09-09:07:56 INFO [SpringContextShutdownHook] Caller+0	 at org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)
+ - Shutting down ExecutorService 'taskScheduler'
+2019/11/09-09:07:56 INFO [SpringContextShutdownHook] Caller+0	 at com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825)
+ - {dataSource-1} closed
